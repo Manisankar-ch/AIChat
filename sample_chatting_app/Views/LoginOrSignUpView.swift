@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import FirebaseAuth
 
 struct LoginOrSignUpView:View {
     
@@ -15,13 +16,37 @@ struct LoginOrSignUpView:View {
     @State var password: String = ""
     @State var isLogin: Bool = true
     
+    func changeEmail(email: String) {
+        self.email = email
+    }
+    
     func changeIsLogin(){
         isLogin.toggle()
     }
     
-    func validate(){
-        //TODO: Navigation to home screen
+    func validate(email: String, password: String, isExisitingUser: Bool){
+        if isExisitingUser {
+//            Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+//                if error != nil {
+//                    print(error)
+//                } else {
+//                    router.navigate(to: .homeScreen)
+//                }
+//            }
+        } else {
+//            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+//                if let error = error {
+//                    print(error.localizedDescription)
+//                    return
+//                }
+//                print(authResult)
+//                if let result = authResult {
+//                    router.navigate(to: .homeScreen)
+//                }
+//            }
+        }
     }
+    
     var body: some View {
         ZStack {
             
@@ -56,9 +81,9 @@ struct LoginOrSignUpView:View {
                         .frame(height: 50)
                         
                         if isLogin {
-                            LoginView(changeScreen: changeIsLogin, validate: validate)
+                            LoginView(email: email, password: password, changeScreen: changeIsLogin, validateFun: validate(email: email, password: password, isExisitingUser: isLogin))
                         } else {
-                            SignupView()
+                            SignupView(email: email, password: password, validateFun: validate(email: email, password: password, isExisitingUser: isLogin))
                         }
                         
                     }
@@ -85,20 +110,25 @@ struct LoginOrSignUpView:View {
 }
 
 struct LoginView: View {
+    
+    @State var email: String = ""
+    @State var password: String = ""
+    
     var changeScreen: () -> Void
-    var validate: () -> Void
+    var validateFun: ()
+    
     var body: some View {
         VStack {
-            FloatingPlaceholderTextField(placeholder: "Enter email")
+            FloatingPlaceholderTextField(text: email, placeholder: "enter email")
                 .padding()
             
-            FloatingPlaceholderTextField(password: true, placeholder: "Enter Password")
+            FloatingPlaceholderTextField(text: password, password: true, placeholder: "enter password")
                 .padding()
             
             GlassView(corners: 25, height: 50)
                 .overlay {
                     Button {
-                        validate()
+                        validateFun
                     } label: {
                         Text("Login")
                             .font(.title2)
@@ -134,20 +164,30 @@ struct LoginView: View {
 }
 
 struct SignupView: View {
+    
+    @State var email: String = ""
+    @State var password: String = ""
+    
+    var validateFun: ()
+    
     var body: some View {
         VStack {
-            FloatingPlaceholderTextField(placeholder: "Enter email")
+            FloatingPlaceholderTextField(text: email, placeholder: "enter email")
                 .padding()
             
-            FloatingPlaceholderTextField(password: true, placeholder: "Enter Password")
+            FloatingPlaceholderTextField(text: password, password: true, placeholder: "enter password")
                 .padding()
             
             GlassView(corners: 25, height: 50)
                 .overlay {
-                    Text("Create Account")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                        .foregroundStyle(Color(hue: 0.742, saturation: 0.478, brightness: 0.9))
+                    Button {
+                        validateFun
+                    } label: {
+                        Text("Create Account")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                            .foregroundStyle(Color(hue: 0.742, saturation: 0.478, brightness: 0.9))
+                    }
                 }
             
             Divider()
@@ -195,7 +235,7 @@ struct HeadingText: View {
 }
 
 struct FloatingPlaceholderTextField: View {
-    @State private var text: String = ""
+    @State var text: String
     @State private var isEditing: Bool = false
     @State private var isHidden: Bool = false
     
@@ -214,6 +254,7 @@ struct FloatingPlaceholderTextField: View {
                         .foregroundColor(.gray)
                         .background(Color(red: 0.729, green: 0.846, blue: 0.93))
                         .padding(.horizontal, 30)
+                        .opacity(text.isEmpty || isEditing ? 1 : 0)
                         .offset(y: isEditing ? -35 : 0)
                         .scaleEffect(isEditing ? 0.8 : 1)
                     

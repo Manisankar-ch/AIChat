@@ -13,7 +13,7 @@ struct sample_chatting_appApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            LoginOrSignUpView()
         }
     }
 }
