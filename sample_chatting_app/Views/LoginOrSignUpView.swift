@@ -24,26 +24,24 @@ struct LoginOrSignUpView:View {
         isLogin.toggle()
     }
     
-    func validate(email: String, password: String, isExisitingUser: Bool){
-        if isExisitingUser {
-//            Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
-//                if error != nil {
-//                    print(error)
-//                } else {
-//                    router.navigate(to: .homeScreen)
-//                }
-//            }
+    func validate() {
+        if isLogin {
+            Auth.auth().signIn(withEmail: email, password: password) { result, error in
+                if error != nil {
+                    
+                } else {
+                    router.navigate(to: .homeScreen)
+                }
+            }
         } else {
-//            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-//                if let error = error {
-//                    print(error.localizedDescription)
-//                    return
-//                }
-//                print(authResult)
-//                if let result = authResult {
-//                    router.navigate(to: .homeScreen)
-//                }
-//            }
+            Auth.auth().createUser(withEmail: email, password: password) { result, error in
+                if let error = error {
+                    print(error.localizedDescription)
+                    return
+                } else {
+                    router.navigate(to: .homeScreen)
+                }
+            }
         }
     }
     
@@ -81,9 +79,9 @@ struct LoginOrSignUpView:View {
                         .frame(height: 50)
                         
                         if isLogin {
-                            LoginView(email: email, password: password, changeScreen: changeIsLogin, validateFun: validate(email: email, password: password, isExisitingUser: isLogin))
+                            LoginView(email: $email, password: $password, changeScreen: changeIsLogin, validateFun: validate)
                         } else {
-                            SignupView(email: email, password: password, validateFun: validate(email: email, password: password, isExisitingUser: isLogin))
+                            SignupView(email: $email, password: $password, validateFun: validate)
                         }
                         
                     }
@@ -111,24 +109,24 @@ struct LoginOrSignUpView:View {
 
 struct LoginView: View {
     
-    @State var email: String = ""
-    @State var password: String = ""
+    @Binding var email: String
+    @Binding var password: String
     
     var changeScreen: () -> Void
-    var validateFun: ()
+    var validateFun: () ->  Void
     
     var body: some View {
         VStack {
-            FloatingPlaceholderTextField(text: email, placeholder: "enter email")
+            FloatingPlaceholderTextField(text: $email, placeholder: "enter email")
                 .padding()
             
-            FloatingPlaceholderTextField(text: password, password: true, placeholder: "enter password")
+            FloatingPlaceholderTextField(text: $password, password: true, placeholder: "enter password")
                 .padding()
             
             GlassView(corners: 25, height: 50)
                 .overlay {
                     Button {
-                        validateFun
+                        validateFun()
                     } label: {
                         Text("Login")
                             .font(.title2)
@@ -165,23 +163,23 @@ struct LoginView: View {
 
 struct SignupView: View {
     
-    @State var email: String = ""
-    @State var password: String = ""
+    @Binding var email: String
+    @Binding var password: String
     
-    var validateFun: ()
+    var validateFun: () -> Void
     
     var body: some View {
         VStack {
-            FloatingPlaceholderTextField(text: email, placeholder: "enter email")
+            FloatingPlaceholderTextField(text: $email, placeholder: "enter email")
                 .padding()
             
-            FloatingPlaceholderTextField(text: password, password: true, placeholder: "enter password")
+            FloatingPlaceholderTextField(text: $password, password: true, placeholder: "enter password")
                 .padding()
             
             GlassView(corners: 25, height: 50)
                 .overlay {
                     Button {
-                        validateFun
+                        validateFun()
                     } label: {
                         Text("Create Account")
                             .font(.title2)
@@ -235,7 +233,7 @@ struct HeadingText: View {
 }
 
 struct FloatingPlaceholderTextField: View {
-    @State var text: String
+    @Binding var text: String
     @State private var isEditing: Bool = false
     @State private var isHidden: Bool = false
     
@@ -267,16 +265,13 @@ struct FloatingPlaceholderTextField: View {
                     .padding(.leading, 20)
                     
                     if password {
-                        Button(action:
-                                {
-                            isHidden.toggle()
-                        }, label: {
-                            Image(systemName: isHidden ? "eye.fill" : "eye.slash.fill")
-                                .foregroundColor(.black)
-                                .frame(maxWidth: .infinity, alignment: .trailing)
-                                .padding()
-                            Text("")
-                        })
+                        Image(systemName: isHidden ? "eye.fill" : "eye.slash.fill")
+                            .foregroundColor(.black)
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                            .padding()
+                            .onTapGesture {
+                                isHidden.toggle()
+                            }
                     }
                 }
             }
