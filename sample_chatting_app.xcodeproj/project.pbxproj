@@ -35,6 +35,11 @@
 		EB2BCFF02B933BCD00C68619 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB2BCFEF2B933BCD00C68619 /* FirebaseRemoteConfigSwift */; };
 		EB2BCFF22B933BCD00C68619 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EB2BCFF12B933BCD00C68619 /* FirebaseStorage */; };
 		EB2BCFF42B933BCD00C68619 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = EB2BCFF32B933BCD00C68619 /* FirebaseStorageCombine-Community */; };
+		EB2BCFF72B933DF500C68619 /* BottomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BCFF62B933DF500C68619 /* BottomTabBar.swift */; };
+		EB2BCFFA2B9343FF00C68619 /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BCFF92B9343FF00C68619 /* Colors+Extension.swift */; };
+		EB2BCFFC2B934AE800C68619 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB2BCFFB2B934AE800C68619 /* GoogleService-Info.plist */; };
+		EB2BCFFF2B934CF700C68619 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BCFFE2B934CF700C68619 /* ChatView.swift */; };
+		EB2BD0012B934E5700C68619 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2BD0002B934E5700C68619 /* Colors.xcassets */; };
 		EB39F5C22B909821006EFB98 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB39F5C12B909821006EFB98 /* HomeView.swift */; };
 		EB4A446A2B8F5A0900CDEA23 /* sample_chatting_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A44692B8F5A0900CDEA23 /* sample_chatting_appApp.swift */; };
 		EB4A446E2B8F5A0B00CDEA23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4A446D2B8F5A0B00CDEA23 /* Assets.xcassets */; };
@@ -45,6 +50,11 @@
 
 /* Begin PBXFileReference section */
 		EB0C8C942B919CCD00E5E7E2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EB2BCFF62B933DF500C68619 /* BottomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBar.swift; sourceTree = "<group>"; };
+		EB2BCFF92B9343FF00C68619 /* Colors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
+		EB2BCFFB2B934AE800C68619 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB2BCFFE2B934CF700C68619 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		EB2BD0002B934E5700C68619 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		EB39F5C12B909821006EFB98 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EB4A44662B8F5A0900CDEA23 /* sample_chatting_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample_chatting_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4A44692B8F5A0900CDEA23 /* sample_chatting_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample_chatting_appApp.swift; sourceTree = "<group>"; };
@@ -100,6 +110,31 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		EB2BCFF52B933DD300C68619 /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				EB2BCFFD2B934CE000C68619 /* ChatView */,
+				EB2BCFF62B933DF500C68619 /* BottomTabBar.swift */,
+			);
+			path = TabBarView;
+			sourceTree = "<group>";
+		};
+		EB2BCFF82B9343C100C68619 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB2BCFF92B9343FF00C68619 /* Colors+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EB2BCFFD2B934CE000C68619 /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				EB2BCFFE2B934CF700C68619 /* ChatView.swift */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
 		EB4A445D2B8F5A0900CDEA23 = {
 			isa = PBXGroup;
 			children = (
@@ -119,11 +154,14 @@
 		EB4A44682B8F5A0900CDEA23 /* sample_chatting_app */ = {
 			isa = PBXGroup;
 			children = (
+				EB2BCFFB2B934AE800C68619 /* GoogleService-Info.plist */,
 				EB4A44692B8F5A0900CDEA23 /* sample_chatting_appApp.swift */,
+				EB2BCFF82B9343C100C68619 /* Extensions */,
 				EB0C8C932B919CBC00E5E7E2 /* Router */,
 				EB4A447C2B8F632800CDEA23 /* Helpers */,
 				EB4A44772B8F5A4800CDEA23 /* Views */,
 				EB4A446D2B8F5A0B00CDEA23 /* Assets.xcassets */,
+				EB2BD0002B934E5700C68619 /* Colors.xcassets */,
 				EB4A446F2B8F5A0B00CDEA23 /* Preview Content */,
 			);
 			path = sample_chatting_app;
@@ -140,6 +178,7 @@
 		EB4A44772B8F5A4800CDEA23 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EB2BCFF52B933DD300C68619 /* TabBarView */,
 				EB4A447F2B8F6D8600CDEA23 /* LoginOrSignUpView.swift */,
 				EB39F5C12B909821006EFB98 /* HomeView.swift */,
 			);
@@ -245,7 +284,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB4A44712B8F5A0B00CDEA23 /* Preview Assets.xcassets in Resources */,
+				EB2BD0012B934E5700C68619 /* Colors.xcassets in Resources */,
 				EB4A446E2B8F5A0B00CDEA23 /* Assets.xcassets in Resources */,
+				EB2BCFFC2B934AE800C68619 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2BCFF72B933DF500C68619 /* BottomTabBar.swift in Sources */,
+				EB2BCFFA2B9343FF00C68619 /* Colors+Extension.swift in Sources */,
 				EB4A44802B8F6D8600CDEA23 /* LoginOrSignUpView.swift in Sources */,
 				EB4A446A2B8F5A0900CDEA23 /* sample_chatting_appApp.swift in Sources */,
+				EB2BCFFF2B934CF700C68619 /* ChatView.swift in Sources */,
 				EB0C8C952B919CCD00E5E7E2 /* Router.swift in Sources */,
 				EB39F5C22B909821006EFB98 /* HomeView.swift in Sources */,
 				EB4A447E2B8F634F00CDEA23 /* GlassView.swift in Sources */,
