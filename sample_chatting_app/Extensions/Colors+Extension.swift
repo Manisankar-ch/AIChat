@@ -2,7 +2,7 @@
 //  Colors+Extension.swift
 //  sample_chatting_app
 //
-//  Created by Softsuave on 02/03/24.
+//  Created by Mani on 02/03/24.
 //
 
 import Foundation

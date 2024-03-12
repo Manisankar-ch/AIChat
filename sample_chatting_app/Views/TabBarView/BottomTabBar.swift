@@ -2,7 +2,7 @@
 //  BottomTabBar.swift
 //  sample_chatting_app
 //
-//  Created by Softsuave on 02/03/24.
+//  Created by Mani on 02/03/24.
 //
 
 import SwiftUI
@@ -19,12 +19,13 @@ struct BottomTabBar: View {
                 .tabItem {
                     Label("Contacts", image: "contactsIcon")
                 }
-                Text("Settings")
-                    .tabItem {
-                        Label("Settings", image: "settingsIcon")
-                    }
             
+            Text("Settings")
+                .tabItem {
+                    Label("Settings", image: "settingsIcon")
+                }
         }
+        .navigationBarHidden(true)
     }
 }
 
