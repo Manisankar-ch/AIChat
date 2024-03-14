@@ -37,31 +37,33 @@
 		EB2BCFF42B933BCD00C68619 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = EB2BCFF32B933BCD00C68619 /* FirebaseStorageCombine-Community */; };
 		EB2BCFF72B933DF500C68619 /* BottomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BCFF62B933DF500C68619 /* BottomTabBar.swift */; };
 		EB2BCFFA2B9343FF00C68619 /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BCFF92B9343FF00C68619 /* Colors+Extension.swift */; };
-		EB2BCFFC2B934AE800C68619 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB2BCFFB2B934AE800C68619 /* GoogleService-Info.plist */; };
 		EB2BCFFF2B934CF700C68619 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BCFFE2B934CF700C68619 /* ChatView.swift */; };
 		EB2BD0012B934E5700C68619 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2BD0002B934E5700C68619 /* Colors.xcassets */; };
-		EB39F5C22B909821006EFB98 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB39F5C12B909821006EFB98 /* HomeView.swift */; };
+		EB33A7A42BA07FDA003F6A3E /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB33A7A32BA07FDA003F6A3E /* NavigationBarView.swift */; };
 		EB4A446A2B8F5A0900CDEA23 /* sample_chatting_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A44692B8F5A0900CDEA23 /* sample_chatting_appApp.swift */; };
 		EB4A446E2B8F5A0B00CDEA23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4A446D2B8F5A0B00CDEA23 /* Assets.xcassets */; };
 		EB4A44712B8F5A0B00CDEA23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4A44702B8F5A0B00CDEA23 /* Preview Assets.xcassets */; };
 		EB4A447E2B8F634F00CDEA23 /* GlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A447D2B8F634F00CDEA23 /* GlassView.swift */; };
 		EB4A44802B8F6D8600CDEA23 /* LoginOrSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A447F2B8F6D8600CDEA23 /* LoginOrSignUpView.swift */; };
+		EB5AC30F2B9ED6B9003CC3BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB5AC30E2B9ED6B9003CC3BE /* GoogleService-Info.plist */; };
+		EBF7EE402BA1B46C0040F856 /* LoginOrSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF7EE3F2BA1B46C0040F856 /* LoginOrSignUpViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EB0C8C942B919CCD00E5E7E2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		EB2BCFF62B933DF500C68619 /* BottomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBar.swift; sourceTree = "<group>"; };
 		EB2BCFF92B9343FF00C68619 /* Colors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
-		EB2BCFFB2B934AE800C68619 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EB2BCFFE2B934CF700C68619 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		EB2BD0002B934E5700C68619 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		EB39F5C12B909821006EFB98 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EB33A7A32BA07FDA003F6A3E /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		EB4A44662B8F5A0900CDEA23 /* sample_chatting_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample_chatting_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4A44692B8F5A0900CDEA23 /* sample_chatting_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample_chatting_appApp.swift; sourceTree = "<group>"; };
 		EB4A446D2B8F5A0B00CDEA23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB4A44702B8F5A0B00CDEA23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EB4A447D2B8F634F00CDEA23 /* GlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassView.swift; sourceTree = "<group>"; };
 		EB4A447F2B8F6D8600CDEA23 /* LoginOrSignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginOrSignUpView.swift; sourceTree = "<group>"; };
+		EB5AC30E2B9ED6B9003CC3BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EBF7EE3F2BA1B46C0040F856 /* LoginOrSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSignUpViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,14 +156,15 @@
 		EB4A44682B8F5A0900CDEA23 /* sample_chatting_app */ = {
 			isa = PBXGroup;
 			children = (
-				EB2BCFFB2B934AE800C68619 /* GoogleService-Info.plist */,
 				EB4A44692B8F5A0900CDEA23 /* sample_chatting_appApp.swift */,
 				EB2BCFF82B9343C100C68619 /* Extensions */,
 				EB0C8C932B919CBC00E5E7E2 /* Router */,
 				EB4A447C2B8F632800CDEA23 /* Helpers */,
+				EBF7EE3E2BA1B3D80040F856 /* Models */,
 				EB4A44772B8F5A4800CDEA23 /* Views */,
 				EB4A446D2B8F5A0B00CDEA23 /* Assets.xcassets */,
 				EB2BD0002B934E5700C68619 /* Colors.xcassets */,
+				EB5AC30E2B9ED6B9003CC3BE /* GoogleService-Info.plist */,
 				EB4A446F2B8F5A0B00CDEA23 /* Preview Content */,
 			);
 			path = sample_chatting_app;
@@ -178,9 +181,8 @@
 		EB4A44772B8F5A4800CDEA23 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EBF7EE412BA1BBB80040F856 /* LoginOrSignUP */,
 				EB2BCFF52B933DD300C68619 /* TabBarView */,
-				EB4A447F2B8F6D8600CDEA23 /* LoginOrSignUpView.swift */,
-				EB39F5C12B909821006EFB98 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,8 +191,25 @@
 			isa = PBXGroup;
 			children = (
 				EB4A447D2B8F634F00CDEA23 /* GlassView.swift */,
+				EB33A7A32BA07FDA003F6A3E /* NavigationBarView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EBF7EE3E2BA1B3D80040F856 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EBF7EE412BA1BBB80040F856 /* LoginOrSignUP */ = {
+			isa = PBXGroup;
+			children = (
+				EB4A447F2B8F6D8600CDEA23 /* LoginOrSignUpView.swift */,
+				EBF7EE3F2BA1B46C0040F856 /* LoginOrSignUpViewModel.swift */,
+			);
+			path = LoginOrSignUP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,8 +304,8 @@
 			files = (
 				EB4A44712B8F5A0B00CDEA23 /* Preview Assets.xcassets in Resources */,
 				EB2BD0012B934E5700C68619 /* Colors.xcassets in Resources */,
+				EB5AC30F2B9ED6B9003CC3BE /* GoogleService-Info.plist in Resources */,
 				EB4A446E2B8F5A0B00CDEA23 /* Assets.xcassets in Resources */,
-				EB2BCFFC2B934AE800C68619 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,9 +321,10 @@
 				EB4A44802B8F6D8600CDEA23 /* LoginOrSignUpView.swift in Sources */,
 				EB4A446A2B8F5A0900CDEA23 /* sample_chatting_appApp.swift in Sources */,
 				EB2BCFFF2B934CF700C68619 /* ChatView.swift in Sources */,
+				EBF7EE402BA1B46C0040F856 /* LoginOrSignUpViewModel.swift in Sources */,
 				EB0C8C952B919CCD00E5E7E2 /* Router.swift in Sources */,
-				EB39F5C22B909821006EFB98 /* HomeView.swift in Sources */,
 				EB4A447E2B8F634F00CDEA23 /* GlassView.swift in Sources */,
+				EB33A7A42BA07FDA003F6A3E /* NavigationBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -420,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -435,10 +455,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"sample_chatting_app/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5S4D5DG3W4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -446,12 +467,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.AI-chatting-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AIchattingapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -465,10 +487,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"sample_chatting_app/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5S4D5DG3W4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -476,12 +499,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.AI-chatting-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AIchattingapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;

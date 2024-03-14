@@ -10,14 +10,15 @@ import SwiftUI
 
 struct GlassView: View {
     
-    var corners: CGFloat = 0.0
-    var height: CGFloat = 0
+    var corners: CGFloat
+    var height: CGFloat
+    var width: CGFloat
     
     var body: some View {
         RoundedRectangle(cornerRadius: corners)
             .fill(.white)
             .opacity(0.25)
             .shadow(radius: 8)
-            .frame(height: height, alignment: .center)
+            .frame(width: width, height: height, alignment: .center)
     }
 }
