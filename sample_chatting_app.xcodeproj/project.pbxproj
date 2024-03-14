@@ -37,7 +37,7 @@
 		EB2BCFF42B933BCD00C68619 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = EB2BCFF32B933BCD00C68619 /* FirebaseStorageCombine-Community */; };
 		EB2BCFF72B933DF500C68619 /* BottomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BCFF62B933DF500C68619 /* BottomTabBar.swift */; };
 		EB2BCFFA2B9343FF00C68619 /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BCFF92B9343FF00C68619 /* Colors+Extension.swift */; };
-		EB2BCFFF2B934CF700C68619 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BCFFE2B934CF700C68619 /* ChatView.swift */; };
+		EB2BCFFF2B934CF700C68619 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BCFFE2B934CF700C68619 /* ChatListView.swift */; };
 		EB2BD0012B934E5700C68619 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2BD0002B934E5700C68619 /* Colors.xcassets */; };
 		EB33A7A42BA07FDA003F6A3E /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB33A7A32BA07FDA003F6A3E /* NavigationBarView.swift */; };
 		EB4A446A2B8F5A0900CDEA23 /* sample_chatting_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A44692B8F5A0900CDEA23 /* sample_chatting_appApp.swift */; };
@@ -47,13 +47,14 @@
 		EB4A44802B8F6D8600CDEA23 /* LoginOrSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A447F2B8F6D8600CDEA23 /* LoginOrSignUpView.swift */; };
 		EB5AC30F2B9ED6B9003CC3BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB5AC30E2B9ED6B9003CC3BE /* GoogleService-Info.plist */; };
 		EBF7EE402BA1B46C0040F856 /* LoginOrSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF7EE3F2BA1B46C0040F856 /* LoginOrSignUpViewModel.swift */; };
+		EBFD379C2BA2DFA000CFE8E7 /* ChatRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFD379B2BA2DFA000CFE8E7 /* ChatRoomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EB0C8C942B919CCD00E5E7E2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		EB2BCFF62B933DF500C68619 /* BottomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBar.swift; sourceTree = "<group>"; };
 		EB2BCFF92B9343FF00C68619 /* Colors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
-		EB2BCFFE2B934CF700C68619 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		EB2BCFFE2B934CF700C68619 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
 		EB2BD0002B934E5700C68619 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		EB33A7A32BA07FDA003F6A3E /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		EB4A44662B8F5A0900CDEA23 /* sample_chatting_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample_chatting_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +65,7 @@
 		EB4A447F2B8F6D8600CDEA23 /* LoginOrSignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginOrSignUpView.swift; sourceTree = "<group>"; };
 		EB5AC30E2B9ED6B9003CC3BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EBF7EE3F2BA1B46C0040F856 /* LoginOrSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSignUpViewModel.swift; sourceTree = "<group>"; };
+		EBFD379B2BA2DFA000CFE8E7 /* ChatRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +117,8 @@
 		EB2BCFF52B933DD300C68619 /* TabBarView */ = {
 			isa = PBXGroup;
 			children = (
-				EB2BCFFD2B934CE000C68619 /* ChatView */,
+				EB2BCFFD2B934CE000C68619 /* ChatListView */,
+				EBFD379D2BA2DFA600CFE8E7 /* ChatRoomView */,
 				EB2BCFF62B933DF500C68619 /* BottomTabBar.swift */,
 			);
 			path = TabBarView;
@@ -129,12 +132,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		EB2BCFFD2B934CE000C68619 /* ChatView */ = {
+		EB2BCFFD2B934CE000C68619 /* ChatListView */ = {
 			isa = PBXGroup;
 			children = (
-				EB2BCFFE2B934CF700C68619 /* ChatView.swift */,
+				EB2BCFFE2B934CF700C68619 /* ChatListView.swift */,
 			);
-			path = ChatView;
+			path = ChatListView;
 			sourceTree = "<group>";
 		};
 		EB4A445D2B8F5A0900CDEA23 = {
@@ -210,6 +213,14 @@
 				EBF7EE3F2BA1B46C0040F856 /* LoginOrSignUpViewModel.swift */,
 			);
 			path = LoginOrSignUP;
+			sourceTree = "<group>";
+		};
+		EBFD379D2BA2DFA600CFE8E7 /* ChatRoomView */ = {
+			isa = PBXGroup;
+			children = (
+				EBFD379B2BA2DFA000CFE8E7 /* ChatRoomView.swift */,
+			);
+			path = ChatRoomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,9 +331,10 @@
 				EB2BCFFA2B9343FF00C68619 /* Colors+Extension.swift in Sources */,
 				EB4A44802B8F6D8600CDEA23 /* LoginOrSignUpView.swift in Sources */,
 				EB4A446A2B8F5A0900CDEA23 /* sample_chatting_appApp.swift in Sources */,
-				EB2BCFFF2B934CF700C68619 /* ChatView.swift in Sources */,
+				EB2BCFFF2B934CF700C68619 /* ChatListView.swift in Sources */,
 				EBF7EE402BA1B46C0040F856 /* LoginOrSignUpViewModel.swift in Sources */,
 				EB0C8C952B919CCD00E5E7E2 /* Router.swift in Sources */,
+				EBFD379C2BA2DFA000CFE8E7 /* ChatRoomView.swift in Sources */,
 				EB4A447E2B8F634F00CDEA23 /* GlassView.swift in Sources */,
 				EB33A7A42BA07FDA003F6A3E /* NavigationBarView.swift in Sources */,
 			);

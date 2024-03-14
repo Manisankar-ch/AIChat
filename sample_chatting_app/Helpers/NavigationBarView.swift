@@ -37,6 +37,6 @@ struct NavigationBarView: View {
             Spacer()
                 .frame(width: 24)
         }
-        .padding(.top, 20)
+        .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
     }
 }
