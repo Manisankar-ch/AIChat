@@ -46,6 +46,9 @@
 		EB4A447E2B8F634F00CDEA23 /* GlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A447D2B8F634F00CDEA23 /* GlassView.swift */; };
 		EB4A44802B8F6D8600CDEA23 /* LoginOrSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4A447F2B8F6D8600CDEA23 /* LoginOrSignUpView.swift */; };
 		EB5AC30F2B9ED6B9003CC3BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB5AC30E2B9ED6B9003CC3BE /* GoogleService-Info.plist */; };
+		EB80EF8A2BC12DFB00BB0F70 /* SingUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80EF892BC12DFB00BB0F70 /* SingUp.swift */; };
+		EB80EF8C2BC13C1700BB0F70 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80EF8B2BC13C1700BB0F70 /* String+Extension.swift */; };
+		EB80EF902BC1498800BB0F70 /* AleartToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB80EF8F2BC1498800BB0F70 /* AleartToast.swift */; };
 		EBF7EE402BA1B46C0040F856 /* LoginOrSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF7EE3F2BA1B46C0040F856 /* LoginOrSignUpViewModel.swift */; };
 		EBFD379C2BA2DFA000CFE8E7 /* ChatRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFD379B2BA2DFA000CFE8E7 /* ChatRoomView.swift */; };
 /* End PBXBuildFile section */
@@ -64,6 +67,9 @@
 		EB4A447D2B8F634F00CDEA23 /* GlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassView.swift; sourceTree = "<group>"; };
 		EB4A447F2B8F6D8600CDEA23 /* LoginOrSignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginOrSignUpView.swift; sourceTree = "<group>"; };
 		EB5AC30E2B9ED6B9003CC3BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB80EF892BC12DFB00BB0F70 /* SingUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUp.swift; sourceTree = "<group>"; };
+		EB80EF8B2BC13C1700BB0F70 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		EB80EF8F2BC1498800BB0F70 /* AleartToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AleartToast.swift; sourceTree = "<group>"; };
 		EBF7EE3F2BA1B46C0040F856 /* LoginOrSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSignUpViewModel.swift; sourceTree = "<group>"; };
 		EBFD379B2BA2DFA000CFE8E7 /* ChatRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				EB2BCFF92B9343FF00C68619 /* Colors+Extension.swift */,
+				EB80EF8B2BC13C1700BB0F70 /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -195,6 +202,7 @@
 			children = (
 				EB4A447D2B8F634F00CDEA23 /* GlassView.swift */,
 				EB33A7A32BA07FDA003F6A3E /* NavigationBarView.swift */,
+				EB80EF8F2BC1498800BB0F70 /* AleartToast.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -202,6 +210,7 @@
 		EBF7EE3E2BA1B3D80040F856 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EB80EF892BC12DFB00BB0F70 /* SingUp.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -331,11 +340,14 @@
 				EB2BCFFA2B9343FF00C68619 /* Colors+Extension.swift in Sources */,
 				EB4A44802B8F6D8600CDEA23 /* LoginOrSignUpView.swift in Sources */,
 				EB4A446A2B8F5A0900CDEA23 /* sample_chatting_appApp.swift in Sources */,
+				EB80EF8C2BC13C1700BB0F70 /* String+Extension.swift in Sources */,
 				EB2BCFFF2B934CF700C68619 /* ChatListView.swift in Sources */,
 				EBF7EE402BA1B46C0040F856 /* LoginOrSignUpViewModel.swift in Sources */,
 				EB0C8C952B919CCD00E5E7E2 /* Router.swift in Sources */,
 				EBFD379C2BA2DFA000CFE8E7 /* ChatRoomView.swift in Sources */,
+				EB80EF8A2BC12DFB00BB0F70 /* SingUp.swift in Sources */,
 				EB4A447E2B8F634F00CDEA23 /* GlassView.swift in Sources */,
+				EB80EF902BC1498800BB0F70 /* AleartToast.swift in Sources */,
 				EB33A7A42BA07FDA003F6A3E /* NavigationBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
