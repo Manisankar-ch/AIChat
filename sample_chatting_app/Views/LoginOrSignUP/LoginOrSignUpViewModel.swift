@@ -20,6 +20,8 @@ final class LoginOrSignUpViewModel: ObservableObject {
                 completionHandler(false, error.localizedDescription)
                 print("Sign-in error:", error.localizedDescription)
             } else if let user = authResult?.user {
+                AiChatUserDefaults.setUserUid(uid: user.uid)
+                AiChatUserDefaults.setUserEmail(email: email)
                 completionHandler(true, "Welcome")
                 print("User signed in:", user.uid)
             }
@@ -49,14 +51,14 @@ final class LoginOrSignUpViewModel: ObservableObject {
         }
     }
     
-    func validateDetails(email: String, password: String, name: String, confirmPass: String) -> ValidationError {
+    func validateDetails(email: String, password: String, name: String, confirmPass: String, isLogin: Bool) -> ValidationError {
         if !email.isValidEmail() {
             return .invalidEmail
         } else if !password.isValidPassword() {
             return .invalidPasswordLength
-        } else if name.isEmpty {
+        } else if name.isEmpty, !isLogin {
             return .emptyName
-        } else if password != confirmPass {
+        } else if password != confirmPass, !isLogin {
             return .passwordMismatch
         } else {
             return .none

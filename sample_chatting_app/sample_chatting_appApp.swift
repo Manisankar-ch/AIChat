@@ -13,7 +13,11 @@ struct sample_chatting_appApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            LoginOrSignUpView()
+            if AiChatUserDefaults.getUserUid() != "" {
+                BottomTabBar()
+            } else {
+                LoginOrSignUpView()
+            }
         }
     }
 }

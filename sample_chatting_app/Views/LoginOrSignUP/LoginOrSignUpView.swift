@@ -164,7 +164,7 @@ struct LoginView: View {
                                 .foregroundColor(.white)
                         }
                         .onTapGesture {
-                            let value = viewModel.validateDetails(email: email, password: pass, name: name, confirmPass: confirmPass)
+                            let value = viewModel.validateDetails(email: email, password: pass, name: name, confirmPass: confirmPass, isLogin: isLogin)
                             
                             switch value {
                             case .invalidEmail:
@@ -210,18 +210,6 @@ struct LoginView: View {
                         }
                     }
             )
-            .toolbar {
-//                ToolbarItem(placement: .topBarLeading) {
-//                    Image(.backIcon)
-//                        .resizable()
-//                        .aspectRatio(contentMode: .fill)
-//                        .frame(width: 20, height: 20)
-//                        .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
-//                        .onTapGesture {
-//                            self.presentationMode.wrappedValue.dismiss()
-//                        }
-//                }
-            }
             .background(
                 NavigationLink(
                     destination: BottomTabBar(),
